@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         final FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.container, firstFragment);
         // TODO: invoke function which apply changes of the transaction
+        
     }
 
     private void openSecondFragment(int min, int max) {
