@@ -8,7 +8,6 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
-import kotlin.random.Random
 
 class SecondFragment : Fragment() {
 
@@ -54,7 +53,7 @@ class SecondFragment : Fragment() {
 
     private fun generate(min: Int, max: Int): Int {
         // TODO: generate random number
-        return Random.nextInt(min, max + 1)
+        return (min..max).random()
     }
 
     companion object {
